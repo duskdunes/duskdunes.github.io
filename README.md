@@ -1,22 +1,43 @@
 # Dusk Dunes
 
+**Play it:** https://duskdunes.github.io  
+**Source code:** https://github.com/duskdunes/duskdunes.github.io  (the game's menu links to both)
+
 A browser-based 3D world with ten themed worlds, over thirty short games, live-generated music, positional sound, real stereoscopic 3D viewing modes, and peer-to-peer multiplayer. It is one self-contained HTML file with no build step, no accounts and no downloads, and it runs on desktop and on phones.
 
 ## Play
 
 Open `index.html` in a modern browser (or host the folder on any static web server) and click **Start**.
 
-| | Desktop | iPhone / touch |
-|---|---|---|
-| Look | Mouse (click to capture) | Tilt or turn the phone, or swipe |
-| Move | `W A S D` or arrow keys | Always moving forward |
-| Dash | Hold `Ctrl`, or double-tap `W` | n/a |
-| Brake | n/a | Touch and hold |
-| Jump | `Space` | Tap, or flick the phone up |
-| Down: dive, swim, fly | `Shift` | Flick the phone down |
-| Fly (Zen Wander only) | Double-tap `Space` to start, `Space` up, `Shift` down, double-tap again to land | Double-tap the screen, tilt up or down |
-| Pause menu | `Esc` | **Menu** button |
-| Change 3D view | `M` | Pause menu |
+| | Desktop | iPhone / touch | Game controller |
+|---|---|---|---|
+| Look | Mouse (click to capture) | Tilt or turn the phone, or swipe | Right stick |
+| Move | `W A S D` or arrow keys | Always moving forward | Left stick |
+| Run (dash) | Hold `Ctrl`, or double-tap `W` | Triple-tap | `A` |
+| Jump | `Space` | Tap, or flick the phone up | `B` |
+| Down: dive, swim, fly | `Shift` | Flick the phone down | `Y` |
+| Fly (Zen Wander) | Double-tap `Space` to start, `Space` up, `Shift` down, double-tap again to land | Double-tap to start flying and rise; the next tap resumes walking forward; double-tap again to drop | |
+| Emotes | Hold `E`, then `W` arrow, `A` thumbs down, `S` party, `D` thumbs up | n/a | D-pad up / left / down / right |
+| Pause menu | `Esc` | **Menu** button | |
+| Change 3D view | `M` | Pause menu | |
+
+Jumps are high enough to land on house roofs (you slide off again).
+
+## Cheat codes
+
+These are deliberately not mentioned anywhere in the game. They work on a desktop keyboard, and the menus pause the game for you (other players keep playing in multiplayer).
+
+| Keys | What it does |
+|---|---|
+| `F` + `L` + `Y` (hold together) | Toggle flight in any game |
+| `?` (Shift + `/`) | **Become something.** The game pauses and a menu shows every creature, vehicle, scenery piece and item with a picture, plus a **Random** button. Pick one and you look like it: the camera pulls back so you can see yourself, other players see it instead of you, and your gamer tag is hidden. It is visual only: you keep your own speed, jump and abilities (a police officer has the cone but not the arrest). Choose **Back to normal** to undo. |
+| `/` | **Spawn something.** Same menu, but the pick appears 7 m in front of you and wanders around by itself Visual only. In multiplayer the host runs them and everyone sees them: up to 12 per player and 40 in total, and **Remove spawned** clears only your own. They vanish when you leave the game. |
+| `T` + `P` | Pauses and shows the mouse. Click a point on the ground to teleport there; `Esc` cancels. Clicks line up best in the Normal 3D view. |
+| Hold `+` or `-`, press `J` | Raise or lower your base jump height (about 20% per press). |
+| Hold `+` or `-`, press `R` | Raise or lower your base walk speed (20% per press). |
+| `C` + `L` + `N` | Add a mid-level (skill 5) CPU with your own name. The host only, up to 7 CPUs. |
+
+Jump and speed changes last until you reload the page.
 
 The pause menu is where you pick the world, the game, the 3D view, effects and multiplayer. Hover (or tap) a game card to read a one-line description, and use the search box and category filter (multiplayer, single player, or a genre) to find a game quickly.
 
@@ -41,9 +62,12 @@ Each world changes the scenery, sky, lighting, music scale, footstep sound and h
 
 ## Games
 
-- **Open world:** Treasure Island, Escape the Forest, Lost Explorer, Delivery Driver, Zombie Escape, Mountain Climber, Alien Planet, Bank Robbery Escape, Island Survival, Mystery Village
-- **Multiplayer:** Hide & Seek, Obstacle Race, King of the Hill, Treasure Rush, Rising Lava, Hot Tag, Team Defense, Hot Potato, Light Rush
-- **Classic modes:** Light Hunt, Hot & Cold, Statues, Capture the Flag, Safe Zone, Meteor Dodge, Memory Lights, Stop and Go, Snake Trail, Demolition, Herding, Beacon Defense, Zen Wander
+- **Open world:** Treasure Island, Escape the Forest, Lost Explorer, Delivery Driver, Zombie Escape, Mountain Climber, Alien Planet, Bank Robbery Escape, Island Survival (co-operative), Mystery Village
+- **Multiplayer:** Hide & Seek (hollow buildings with squeaky doors), Obstacle Race, King of the Hill, Treasure Rush, Rising Lava, Hot Tag, Team Defense, Hot Potato, Light Rush, Capture the Flag (Co-op), Capture the Flag (PvP, two teams)
+- **Horror:** Statues, **Living Forest** (trees, houses and obelisks creep closer whenever you are not looking at them; if one touches you it is over)
+- **Others:** Light Hunt, Hot & Cold, Safe Zone, Meteor Dodge, Stop and Go, Snake Trail, Demolition, Herding (co-operative), Zen Wander
+
+In multiplayer games whoever is "it" in tag games runs 40% faster. If the host restarts a round, clients can also request a restart.
 
 **Zen Wander** has no goals: fly freely like creative mode in Minecraft (double-tap `Space`; a single tap still jumps), float along a lazy river, swim in the ponds and wade the streams.
 
@@ -64,6 +88,14 @@ Both eyes are rendered from the actual scene, so no depth estimation is involved
 ## Water
 
 Ponds, lakes and streams are carved into the terrain, so the water has real depth. You wade in the shallows and swim in deep water (slower, head at the surface; hold `Shift` to dive, with blue fog underwater). Streams and the lazy river carry you along with their current. Sliders in Settings set how many ponds and streams appear and how fast streams and the lazy river flow, and the multiplayer host's values are shared with everyone so all players see the same water. Trees, buildings and obelisks are never placed in water, and pickups float on the surface. Games that build their own arena (for example the obstacle race) skip the extra water.
+
+## Accessories and pets
+
+The **Accessories** menu has a live preview and more than 40 choices: hats, glasses, moustaches, back items, neckwear, auras, colours and size, plus a pet that follows you (cat, dog, rabbit, fish, parrot, monkey, turtle or chicken). Other players see your look and your pet in multiplayer.
+
+## CPU players
+
+The **CPUs** menu adds 0 to 7 computer players with auto-generated gamer names. Rename any of them, re-roll a name, and set each one's skill from 1 to 10. CPUs play the multiplayer games (collecting lights, fighting for the hill, hiding and seeking, racing, defending, and so on). In multiplayer the host controls CPUs and they appear to everyone.
 
 ## Sound
 
@@ -86,6 +118,16 @@ Peer-to-peer over WebRTC using [PeerJS](https://peerjs.com). One player chooses 
 ## Settings
 
 Music and sound-effect volume, text size, phone mode, 3D depth, swap eyes, text in both eyes, full HUD text, and population sliders for **trees**, **buildings**, **obelisks**, **ponds and lakes**, **flowing streams** and **water speed**.
+
+## Offline
+
+Once the page has loaded over https, a service worker (`sw.js`) saves the game on your device, so it starts and plays with no connection (the menu shows **Offline: ready**). three.js and PeerJS are bundled into `index.html`, so nothing is fetched from a CDN. Only multiplayer needs the internet. Updates arrive automatically the next time you are online.
+
+## Account (optional)
+
+At the bottom of the menu, **Account** lets you sign up or log in to keep your settings: sliders, checkboxes, 3D view and effects, accessories, pet and CPUs. Everything saves automatically while you are signed in, and logging in restores it. Playing without an account works as before.
+
+This site is static and has no server, so accounts live in your browser on that device. Passwords are stored only as a salted PBKDF2 hash. There is no password recovery. To move to another device, use **Export account file** and **Import account file**. The file holds your settings and the password hash, so keep it private.
 
 ## Install on a phone or desktop
 
@@ -110,7 +152,9 @@ Current Chrome, Edge, Firefox and Safari (desktop and iOS 14.5+ for device tilt)
 ## Project layout
 
 ```
-index.html              the entire game
+index.html              the entire game (three.js and PeerJS bundled in)
+sw.js                   service worker for offline play
+logo.svg                the logo
 manifest.webmanifest    install metadata
 icon-180.png            Apple touch icon (square)
 icon-192.png, icon-512.png   rounded install icons
