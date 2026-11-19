@@ -33,11 +33,15 @@ These are deliberately not mentioned anywhere in the game. They work on a deskto
 | `?` (Shift + `/`) | **Become something.** The game pauses and a menu shows every creature, vehicle, scenery piece and item with a picture, plus a **Random** button. Pick one and you look like it: the camera pulls back so you can see yourself, other players see it instead of you, and your gamer tag is hidden. It is visual only: you keep your own speed, jump and abilities (a police officer has the cone but not the arrest). Choose **Back to normal** to undo. |
 | `/` | **Spawn something.** Same menu, but the pick appears 7 m in front of you and wanders around by itself Visual only. In multiplayer the host runs them and everyone sees them: up to 12 per player and 40 in total, and **Remove spawned** clears only your own. They vanish when you leave the game. |
 | `T` + `P` | Pauses and shows the mouse. Click a point on the ground to teleport there; `Esc` cancels. Clicks line up best in the Normal 3D view. |
-| Hold `+` or `-`, press `J` | Raise or lower your base jump height (about 20% per press). |
-| Hold `+` or `-`, press `R` | Raise or lower your base walk speed (20% per press). |
-| `C` + `L` + `N` | Add a mid-level (skill 5) CPU with your own name. The host only, up to 7 CPUs. |
+| Hold `J`, then hold `+` or `-` | Smoothly slide your base jump height up or down while you hold. A pop-up shows the percentage. |
+| Hold `R`, then hold `+` or `-` | Smoothly slide your base walk speed up or down. (`R` on its own, tapped, still restarts the round.) |
+| `I` + `N` + `V` | **Invisibility** (toggle). Creatures, zombies, statues, the forest hunters, police and search beams cannot sense or catch you, CPUs ignore you, and other players cannot see you or your gamer tag. You can still collect items. |
+| `C` + `T` + `V` | **CCTV view** (toggle). Third-person security cameras on poles around the map, grainy and grey with scanlines, a camera number and a live date and time stamp. It cuts to the nearest camera when you walk out of range; `Left` / `Right` arrows switch cameras by hand. You still move with the keys. |
+| `R` + `C` + `K` | **Rick mode** (toggle). An original 80s dance-pop loop made in the game, a rainbow tint, disco spotlights, floating music notes, everything bobbing to the beat, and three transparent cutout dancers. The built-in dancer is an original silhouette. To dance with your own picture, use **Rick mode picture** in Settings (any image; plain backgrounds are cut out automatically, or tick the box off if it already has transparency). The picture stays on your device. |
+| `X` five times quickly | **Kill switch.** Disables every cheat code for everyone in the game (in multiplayer the host tells all players). Active cheats are switched off too. It lasts until the page is reloaded. |
+| `C` + `L` + `N` | Add a mid-level (skill 5) CPU with your own name. **Anyone** can use it: players in a multiplayer game ask the host, who adds it next to them. Up to 7 CPUs; one every second. |
 
-Jump and speed changes last until you reload the page.
+Jump and speed changes last until you reload the page. Holding `E` shows an on-screen emote viewer (`W` arrow, `A` thumbs down, `S` party, `D` thumbs up) that lights up the one you send.
 
 The pause menu is where you pick the world, the game, the 3D view, effects and multiplayer. Hover (or tap) a game card to read a one-line description, and use the search box and category filter (multiplayer, single player, or a genre) to find a game quickly.
 
@@ -64,10 +68,10 @@ Each world changes the scenery, sky, lighting, music scale, footstep sound and h
 
 - **Open world:** Treasure Island, Escape the Forest, Lost Explorer, Delivery Driver, Zombie Escape, Mountain Climber, Alien Planet, Bank Robbery Escape, Island Survival (co-operative), Mystery Village
 - **Multiplayer:** Hide & Seek (hollow buildings with squeaky doors), Obstacle Race, King of the Hill, Treasure Rush, Rising Lava, Hot Tag, Team Defense, Hot Potato, Light Rush, Capture the Flag (Co-op), Capture the Flag (PvP, two teams)
-- **Horror:** Statues, **Living Forest** (trees, houses and obelisks creep closer whenever you are not looking at them; if one touches you it is over)
+- **Horror:** Statues, **Living Forest** (trees, houses and obelisks creep closer whenever you are not looking at them, slowly and from farther away, after a short grace period; dashing is disabled; if one touches you it is over)
 - **Others:** Light Hunt, Hot & Cold, Safe Zone, Meteor Dodge, Stop and Go, Snake Trail, Demolition, Herding (co-operative), Zen Wander
 
-In multiplayer games whoever is "it" in tag games runs 40% faster. If the host restarts a round, clients can also request a restart.
+The zombies, police, statue, villagers, sheep and meteors in the games now use the same models you see in the `?` and `/` menus. In multiplayer games whoever is "it" in tag games runs 40% faster. If the host restarts a round, clients can also request a restart.
 
 **Zen Wander** has no goals: fly freely like creative mode in Minecraft (double-tap `Space`; a single tap still jumps), float along a lazy river, swim in the ponds and wade the streams.
 
@@ -91,7 +95,18 @@ Ponds, lakes and streams are carved into the terrain, so the water has real dept
 
 ## Accessories and pets
 
-The **Accessories** menu has a live preview and more than 40 choices: hats, glasses, moustaches, back items, neckwear, auras, colours and size, plus a pet that follows you (cat, dog, rabbit, fish, parrot, monkey, turtle or chicken). Other players see your look and your pet in multiplayer.
+The **Accessories** menu has a live preview that turns all the way around and about 160 choices across hats, glasses, face paint, moustaches and beards, outfits, shoes, back items, neckwear and auras, plus colours, size and a pet that follows you (cat, dog, rabbit, fish, parrot, monkey, turtle or chicken). Items that fit the current season or holiday are starred. **Fog Cape** (Back list) is a mist cloak made of layered translucent mist, cloth tassels and drifting wisps that ripple in the wind, more at the hem than at the shoulders. Other players see your look and your pet in multiplayer.
+
+## Dates, holidays and seasons
+
+**Settings > Dates and holidays** controls everything that changes with the calendar. Each holiday tints the sky, adds falling or floating particles and sets decorations around the world, and in-season accessories get a star in the Accessories menu.
+
+- **Date-responsive features** turns all of it on or off in one go.
+- **Hemisphere** (Auto from your time zone, Northern or Southern) flips the seasons. Fixed-date holidays stay on their date, so a Southern Christmas is on 25 December but has sunshine instead of snow.
+- **Seasons** (winter, spring, summer, autumn) can be switched off separately from holidays.
+- Every holiday has its own tick box, so you can switch off Christmas and keep winter, or turn everything off except the ones you like. **All on** and **All off** are there too, and **Theme** lets you pick any one by hand.
+
+About 45 holidays are included: New Year, Christmas, Kwanzaa, Hanukkah, Burns Night, Australia Day, Groundhog Day, Waitangi Day, Valentine's Day, Lunar New Year, Leap Day, Mario Day (10 March), Pi Day, Holi, St. Patrick's Day, cherry blossom season, April Fools' Day, Songkran, Easter (calculated each year), Earth Day, ANZAC Day, Walpurgis Night, May the 4th, Cinco de Mayo, Towel Day, the Dragon Boat Festival, Midsummer, Tau Day, Pride month, Canada Day, Tanabata, a fireworks week, Bastille Day, Pi Approximation Day, Swiss National Day, Obon, back to school, Talk Like a Pirate Day, the Mid-Autumn Festival, Oktoberfest, Día de los Muertos, Halloween, Bonfire Night, Remembrance Day, Diwali and US Thanksgiving. Holidays whose dates move (Lunar New Year, Holi, Diwali, Hanukkah, Dragon Boat, Mid-Autumn) use a fixed approximate window each year and are marked "approx.".
 
 ## CPU players
 
