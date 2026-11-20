@@ -1,5 +1,5 @@
 // Dusk Dunes service worker: makes the game run offline after the first visit.
-const CACHE='dusk-dunes-d49f747913';
+const CACHE='dusk-dunes-82421a4618';
 const CORE=['./','index.html','manifest.webmanifest','logo.svg','icon-180.png','icon-192.png','icon-512.png'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k.startsWith('dusk-dunes-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});

@@ -30,15 +30,13 @@ These are deliberately not mentioned anywhere in the game. They work on a deskto
 | Keys | What it does |
 |---|---|
 | `F` + `L` + `Y` (hold together) | Toggle flight in any game |
-| `?` (Shift + `/`) | **Become something.** The game pauses and a menu shows every creature, vehicle, scenery piece and item with a picture, plus a **Random** button. Pick one and you look like it: the camera pulls back so you can see yourself, other players see it instead of you, and your gamer tag is hidden. It is visual only: you keep your own speed, jump and abilities (a police officer has the cone but not the arrest). Choose **Back to normal** to undo. |
+| `?` (Shift + `/`) | **Become something.** The game pauses and a menu shows every creature, vehicle, scenery piece and item with a picture, plus a **Random** button. Pick one and you look like it: the camera pulls back so you can see yourself, other players see it instead of you, and your gamer tag is hidden. It is visual only: you keep your own speed, jump and abilities (a police officer has the sector but not the arrest). The models carry the real in-game effects: police show the red 48 m vision sector on the ground, helicopters hover with the same searchlight cone and ground spot, and vans have their beam. Creatures swing their arms and legs when they walk. Choose **Back to normal** to undo. |
 | `/` | **Spawn something.** Same menu, but the pick appears 7 m in front of you and wanders around by itself Visual only. In multiplayer the host runs them and everyone sees them: up to 12 per player and 40 in total, and **Remove spawned** clears only your own. They vanish when you leave the game. |
 | `T` + `P` | Pauses and shows the mouse. Click a point on the ground to teleport there; `Esc` cancels. Clicks line up best in the Normal 3D view. |
 | Hold `J`, then hold `+` or `-` | Smoothly slide your base jump height up or down while you hold. A pop-up shows the percentage. |
 | Hold `R`, then hold `+` or `-` | Smoothly slide your base walk speed up or down. (`R` on its own, tapped, still restarts the round.) |
 | `I` + `N` + `V` | **Invisibility** (toggle). Creatures, zombies, statues, the forest hunters, police and search beams cannot sense or catch you, CPUs ignore you, and other players cannot see you or your gamer tag. You can still collect items. |
-| `C` + `T` + `V` | **CCTV view** (toggle). Third-person security cameras on poles around the map, grainy and grey with scanlines, a camera number and a live date and time stamp. It cuts to the nearest camera when you walk out of range; `Left` / `Right` arrows switch cameras by hand. You still move with the keys. |
-| `R` + `C` + `K` | **Rick mode** (toggle). An original 80s dance-pop loop made in the game, a rainbow tint, disco spotlights, floating music notes, everything bobbing to the beat, and three transparent cutout dancers. The built-in dancer is an original silhouette. To dance with your own picture, use **Rick mode picture** in Settings (any image; plain backgrounds are cut out automatically, or tick the box off if it already has transparency). The picture stays on your device. |
-| `X` five times quickly | **Kill switch.** Disables every cheat code for everyone in the game (in multiplayer the host tells all players). Active cheats are switched off too. It lasts until the page is reloaded. |
+| `X` five times quickly | **Kill switch.** Disables every cheat code for everyone in the game (in multiplayer the host tells all players). Active cheats are switched off too, including the CCTV view. It lasts until the page is reloaded. |
 | `C` + `L` + `N` | Add a mid-level (skill 5) CPU with your own name. **Anyone** can use it: players in a multiplayer game ask the host, who adds it next to them. Up to 7 CPUs; one every second. |
 
 Jump and speed changes last until you reload the page. Holding `E` shows an on-screen emote viewer (`W` arrow, `A` thumbs down, `S` party, `D` thumbs up) that lights up the one you send.
@@ -71,7 +69,7 @@ Each world changes the scenery, sky, lighting, music scale, footstep sound and h
 - **Horror:** Statues, **Living Forest** (trees, houses and obelisks creep closer whenever you are not looking at them, slowly and from farther away, after a short grace period; dashing is disabled; if one touches you it is over)
 - **Others:** Light Hunt, Hot & Cold, Safe Zone, Meteor Dodge, Stop and Go, Snake Trail, Demolition, Herding (co-operative), Zen Wander
 
-The zombies, police, statue, villagers, sheep and meteors in the games now use the same models you see in the `?` and `/` menus. In multiplayer games whoever is "it" in tag games runs 40% faster. If the host restarts a round, clients can also request a restart.
+The zombies, police, statue, villagers, sheep and meteors in the games use the same models you see in the `?` and `/` menus. In multiplayer games whoever is "it" in tag games runs 40% faster. If the host restarts a round, clients can also request a restart.
 
 **Zen Wander** has no goals: fly freely like creative mode in Minecraft (double-tap `Space`; a single tap still jumps), float along a lazy river, swim in the ponds and wade the streams.
 
@@ -93,20 +91,13 @@ Both eyes are rendered from the actual scene, so no depth estimation is involved
 
 Ponds, lakes and streams are carved into the terrain, so the water has real depth. You wade in the shallows and swim in deep water (slower, head at the surface; hold `Shift` to dive, with blue fog underwater). Streams and the lazy river carry you along with their current. Sliders in Settings set how many ponds and streams appear and how fast streams and the lazy river flow, and the multiplayer host's values are shared with everyone so all players see the same water. Trees, buildings and obelisks are never placed in water, and pickups float on the surface. Games that build their own arena (for example the obstacle race) skip the extra water.
 
+## CCTV view
+
+Pick **CCTV security cameras (CRT, night vision)** in **3D view** (or cycle to it with `M`). Twelve security cameras on poles around the map watch you in third person through the game's own night vision, retro 8-bit dither and CRT scanline effects, with a camera number and a date and time stamp. The mouse turns and tilts your character's head, not the camera. The camera cuts to the nearest pole as you walk, and the `Left` / `Right` arrows switch by hand. Switching back to another view restores the effects you had.
+
 ## Accessories and pets
 
-The **Accessories** menu has a live preview that turns all the way around and about 160 choices across hats, glasses, face paint, moustaches and beards, outfits, shoes, back items, neckwear and auras, plus colours, size and a pet that follows you (cat, dog, rabbit, fish, parrot, monkey, turtle or chicken). Items that fit the current season or holiday are starred. **Fog Cape** (Back list) is a mist cloak made of layered translucent mist, cloth tassels and drifting wisps that ripple in the wind, more at the hem than at the shoulders. Other players see your look and your pet in multiplayer.
-
-## Dates, holidays and seasons
-
-**Settings > Dates and holidays** controls everything that changes with the calendar. Each holiday tints the sky, adds falling or floating particles and sets decorations around the world, and in-season accessories get a star in the Accessories menu.
-
-- **Date-responsive features** turns all of it on or off in one go.
-- **Hemisphere** (Auto from your time zone, Northern or Southern) flips the seasons. Fixed-date holidays stay on their date, so a Southern Christmas is on 25 December but has sunshine instead of snow.
-- **Seasons** (winter, spring, summer, autumn) can be switched off separately from holidays.
-- Every holiday has its own tick box, so you can switch off Christmas and keep winter, or turn everything off except the ones you like. **All on** and **All off** are there too, and **Theme** lets you pick any one by hand.
-
-About 45 holidays are included: New Year, Christmas, Kwanzaa, Hanukkah, Burns Night, Australia Day, Groundhog Day, Waitangi Day, Valentine's Day, Lunar New Year, Leap Day, Mario Day (10 March), Pi Day, Holi, St. Patrick's Day, cherry blossom season, April Fools' Day, Songkran, Easter (calculated each year), Earth Day, ANZAC Day, Walpurgis Night, May the 4th, Cinco de Mayo, Towel Day, the Dragon Boat Festival, Midsummer, Tau Day, Pride month, Canada Day, Tanabata, a fireworks week, Bastille Day, Pi Approximation Day, Swiss National Day, Obon, back to school, Talk Like a Pirate Day, the Mid-Autumn Festival, Oktoberfest, Día de los Muertos, Halloween, Bonfire Night, Remembrance Day, Diwali and US Thanksgiving. Holidays whose dates move (Lunar New Year, Holi, Diwali, Hanukkah, Dragon Boat, Mid-Autumn) use a fixed approximate window each year and are marked "approx.".
+The **Accessories** menu has a live preview that turns all the way around and about 160 choices across hats, glasses, face paint, moustaches and beards, outfits, shoes, back items, neckwear and auras, plus colours, size and a pet that follows you (cat, dog, rabbit, fish, parrot, monkey, turtle or chicken). **Fog Cape** (Back list) is a black mistcloak made of layered translucent mist, cloth tassels and drifting wisps that ripple in the wind, more at the hem than at the shoulders. Figures (you, other players, CPUs, zombies, police, villagers, sheep and the preview) swing their arms and legs as they walk, and boots and shoes move with the legs. Other players see your look and your pet in multiplayer.
 
 ## CPU players
 
@@ -142,7 +133,9 @@ Once the page has loaded over https, a service worker (`sw.js`) saves the game o
 
 At the bottom of the menu, **Account** lets you sign up or log in to keep your settings: sliders, checkboxes, 3D view and effects, accessories, pet and CPUs. Everything saves automatically while you are signed in, and logging in restores it. Playing without an account works as before.
 
-This site is static and has no server, so accounts live in your browser on that device. Passwords are stored only as a salted PBKDF2 hash. There is no password recovery. To move to another device, use **Export account file** and **Import account file**. The file holds your settings and the password hash, so keep it private.
+**How passwords and settings are protected.** Your password is never stored or sent. Your browser turns it into two secrets with PBKDF2-SHA-256 (600,000 rounds, salted per username): a login value and an encryption key. Only a salted SHA-256 of the login value is kept as the verifier, and your settings are encrypted with AES-GCM using the key, so storage (and the sync server, if you use one) holds nothing readable. Eight wrong guesses lock a server account for 15 minutes. There is no password recovery, because nobody else holds the key. Other features: a password-strength hint, show password, **Keep me signed in on this device**, **Change password** and **Delete account**.
+
+**Using your account everywhere.** GitHub Pages only serves files, so "everywhere" needs a tiny server. `sync/` contains one (a free Cloudflare Worker, about five minutes to deploy; see `sync/README.md`). Paste its address into **Account > Sync across devices** (or set `DD_SYNC_URL` in the source) and the same login works on every device. Without a server, accounts stay on the device they were made on, and **Export / Import account file** moves an encrypted copy between devices.
 
 ## Install on a phone or desktop
 
